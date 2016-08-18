@@ -1,0 +1,123 @@
+/* For debugging purposes */
+.red {
+	border: 2px solid red;
+	color: red;
+}
+/** **/
+
+/* Web Fonts */
+@font-face {
+    font-family: 'walkway';
+    src: url('Walkway_UltraBold-webfont.eot');
+    src: url('Walkway_UltraBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Walkway_UltraBold-webfont.woff') format('woff'),
+         url('Walkway_UltraBold-webfont.ttf') format('truetype'),
+         url('Walkway_UltraBold-webfont.svg#walkway_ultraboldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Main Colors 
+Primary Blue: ; rgb(28, 76, 186);
+#2098d1
+Secondary Blue: rgb(79, 116, 165);
+White: #fff;
+Black #000
+*/
+
+
+/****** GENERAL LAYOUT and re-styling ******/
+
+* {
+	font-family: 'walkway', Arial, sans-serif;
+}
+
+section {
+	padding: 3em 0 5em 0;
+	
+}
+
+
+
+#skills,
+#contact {
+	background: url("../images/bg2.jpg") no-repeat center center fixed;
+	/* background-image:
+		linear-gradient(to bottom, rgba(52,155,206,1) 0%,rgba(0,67,86,1) 79%); */
+	color: #fff;
+}
+
+.well {
+	color: #000;
+}
+
+/****** NAVIGATION ******/
+
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: rgb(79, 116, 165);
+}
+
+.navigation {
+	margin-bottom: 0;
+	opacity: 0.8;
+}
+
+#nav {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0);
+	border: 0;
+	font-size: 1.5em;
+	margin: 2em;
+	list-style: none;
+	color: white;
+}
+
+
+/****** LANDING WEBSITE ******/
+
+.landing {
+	
+	min-height: 100vh;
+	min-width: auto;
+	margin-bottom: 2em;
+	background: url("../images/bg2.jpg") no-repeat center center fixed;
+	background-size: cover;
+	position: relative;
+}
+
+#jumbotron {
+	border: 2px solid white;
+	color: white;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#chevron-down {
+	position: absolute;
+	bottom: 10%;
+f	ont-size: 3em;
+}
+
+
+/****** SKILLS ******/
+
+#skills .row {
+	margin-top: auto;
+}
+
+/****** PROJECTS ******/
+
+
+
+.project-img {
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	padding: -2rem;
+}
