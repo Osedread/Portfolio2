@@ -30,14 +30,13 @@ Black #000
 
 * {
 	font-family: 'walkway', Arial, sans-serif;
+	font-size: 20px;
 }
 
 section {
 	padding: 3em 0 5em 0;
 	
 }
-
-
 
 #skills,
 #contact {
@@ -101,7 +100,7 @@ section {
 #chevron-down {
 	position: absolute;
 	bottom: 10%;
-f	ont-size: 3em;
+	font-size: 5em;
 }
 
 
@@ -109,6 +108,7 @@ f	ont-size: 3em;
 
 #skills .row {
 	margin-top: auto;
+	overflow: hidden;
 }
 
 /****** PROJECTS ******/
