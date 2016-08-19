@@ -3,9 +3,21 @@
 	border: 2px solid red;
 	color: red;
 }
-/** **/
 
-/* Web Fonts */
+/**************************** ******************************/
+/* Main Colors [turn into vars when Sass]
+
+Primary Blue: rgb(44, 155, 208);
+White;
+
+Secondary Blue: rgb(79, 116, 165);
+Black;
+*/
+/**************************** ******************************/
+
+
+/****** Web Fonts ******/
+
 @font-face {
     font-family: 'walkway';
     src: url('Walkway_UltraBold-webfont.eot');
@@ -17,14 +29,6 @@
     font-style: normal;
 }
 
-/* Main Colors 
-Primary Blue: ; rgb(28, 76, 186);
-#2098d1
-Secondary Blue: rgb(79, 116, 165);
-White: #fff;
-Black #000
-*/
-
 
 /****** GENERAL LAYOUT and re-styling ******/
 
@@ -33,14 +37,17 @@ Black #000
 	font-size: 20px;
 }
 
+a {
+	text-decoration: none !important;
+}
+
 section {
 	padding: 3em 0 5em 0;
-	
 }
 
 .chevron {
 	font-size: 3em;
-	color: white;
+	color: rgba(255, 255, 255, 0.5);
 	display: block;
 	text-align: center;
 	margin: 0 auto;
@@ -49,25 +56,25 @@ section {
 #skills,
 #contact {
 	background: url("../images/bg2.jpg") no-repeat center center fixed;
-	/* background-image:
-		linear-gradient(to bottom, rgba(52,155,206,1) 0%,rgba(0,67,86,1) 79%); */
 	color: #fff;
 	background-size: cover;
 }
 
 .well {
-	color: #000;
+	color: white;
+	background-color: rgba(255, 255, 255, 0.2);
 }
 
 
 /****** NAVIGATION ******/
 
 .navbar-default .navbar-nav li a {
-    color: #fff;
+    color: white;
 }
 
 .navbar-default .navbar-nav li a:hover {
-    color: rgb(79, 116, 165);
+    color: rgb(44, 155, 208);
+    text-shadow: 0 1px 0 rgb(79, 116, 165);
 }
 
 .navigation {
@@ -107,9 +114,26 @@ section {
 }
 
 #ld-chevron-wrapper {
+	/* Style for positioning the chevron in the landing */
 	position: absolute;
 	bottom: 10%;
-	
+}
+
+#jumbo-mobile {
+	/* Since the jumbotron collapses when it reaches 300-400px,
+	I find this solution brings less headaches as well as not 
+	changing the User Experience */
+	color: white;
+	position: absolute;
+	bottom: 20%;
+	border: 2px solid white;
+}
+
+
+/****** ABOUT ******/
+
+#chevron-about {
+	color: rgba(44, 155, 208, 0.8);
 }
 
 /****** SKILLS ******/
@@ -126,5 +150,5 @@ section {
 	background-size: cover;
 	width: 100%;
 	height: auto;
-	padding: -2rem;
+	padding: 2rem;
 }
