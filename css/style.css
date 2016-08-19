@@ -38,26 +38,35 @@ section {
 	
 }
 
+.chevron {
+	font-size: 3em;
+	color: white;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
+
 #skills,
 #contact {
 	background: url("../images/bg2.jpg") no-repeat center center fixed;
 	/* background-image:
 		linear-gradient(to bottom, rgba(52,155,206,1) 0%,rgba(0,67,86,1) 79%); */
 	color: #fff;
+	background-size: cover;
 }
 
 .well {
 	color: #000;
 }
 
+
 /****** NAVIGATION ******/
 
-
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav li a {
     color: #fff;
 }
 
-.navbar-default .navbar-nav > li > a:hover {
+.navbar-default .navbar-nav li a:hover {
     color: rgb(79, 116, 165);
 }
 
@@ -97,12 +106,11 @@ section {
 	transform: translateY(-50%);
 }
 
-#chevron-down {
+#ld-chevron-wrapper {
 	position: absolute;
 	bottom: 10%;
-	font-size: 5em;
+	
 }
-
 
 /****** SKILLS ******/
 
@@ -111,9 +119,8 @@ section {
 	overflow: hidden;
 }
 
+
 /****** PROJECTS ******/
-
-
 
 .project-img {
 	background-size: cover;

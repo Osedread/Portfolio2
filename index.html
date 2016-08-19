@@ -13,8 +13,9 @@
 <!--  ///// CSS ///// -->
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap-social.css" rel="stylesheet">
   <link href="css/hover.css" rel="stylesheet" media="all">
-  
 	<link href="css/style.css" rel="stylesheet">
 
 </head>
@@ -56,9 +57,9 @@
     </div>
   </div>
   <div class="row">
-    <div id="chevron-down" class="hidden-xs text-center col-xs-12">
-        <a href="#skills" class="glyph">
-          <p><i class="glyphicon glyphicon-chevron-down hvr-pulse-grow"></i></p>
+    <div id="ld-chevron-wrapper" class="hidden-xs text-center col-xs-2 col-xs-offset-5">
+        <a href="#about">
+          <span class="fa fa-chevron-down chevron hvr-pulse-grow"></span>
         </a>
     </div>
   </div>
@@ -71,15 +72,24 @@
   <h2>ABOUT</h2>
   <br>
   <div class="row center-block">
-    <img src="images/profile2.jpg" alt="profile" class="img-circle" />
+    <div class="col-sm-4 col-sm-offset-4 col-xs-1- col-xs-offset-1">
+      <img src="images/profile2.jpg" alt="profile" class="img-circle img-responsive" />
+    </div>
   </div>
   <br>
   <div class="row">
     <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
-      <p>My name is Jose Diaz-Gonzalez. I am a front-end developer based in Bristol, UK. I have self-taught myslef web development over the course of two years and I am currently studying Computer Science at the Open University in the meantime.</p>
-      <p>I'm available for work, either building your company website or being part of a larger project. I can deliver a polished solution with the technologies I know to craft your desire pressence on the web.</p>
-      <p>Are you specially interested in using a certain tool? I'm a avid learner and problem-solver. I'm always looking up new things that will improve the final experience. Right now, I'm digging into Sass, SVG, PHP and WordPress.
+      <p>My name is Jose Diaz-Gonzalez. I am a front-end developer based in Bristol, UK. I first began learning web development in the Summer 2015. On 2016, I joined the Open University as a part-time student in Computer Science and will split my time between these.</p>
+      <p>A year after I wrote my first line of code, I'm ready for hire, either for launching your online presence with a detailed crafted website or joining your design agency. I won't stop till I deliver a polished solution that satisfy your expectations.</p>
+      <p>I'm a avid learner and problem-solver. I'm always looking up new web technologies that will improve the final result. Right now, I'm digging into Sass, SVG, PHP and WordPress. And I'll be really please to bring that knowledge into a working example.
       <p></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="hidden-xs text-center">
+        <a href="#skills">
+          <i class="fa fa-chevron-down chevron hvr-pulse" ariahidden="true"></i>
+        </a>
     </div>
   </div>
   
@@ -93,7 +103,7 @@
   <div class="row row-eq-height">
     <div class="well col-lg-2 col-lg-offset-1 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
       <h3>HTML5 and CSS3</h3>
-      <p>I develop static websites that follow the W3C Standards and customize the style and format for a smooth and visually attractive result.</p>
+      <p>I develop static websites that follow the W3C Standards and validations. I'll customize the style and format for a smooth and visually attractive result. </p>
     </div>
     <div class="well col-lg-2 col-lg-offset-2 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
       <h3>JavaScript</h3>
@@ -101,7 +111,7 @@
     </div>
     <div class="well col-lg-2 col-lg-offset-2 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
       <h3>Mobile friendly</h3>
-      <p>With the help of BootStrap we'll ensure that your website is fully responsive. It will look amazing in all the devices!</p>
+      <p>With the help of BootStrap we'll ensure that your website is fully responsive to all types of electronic devices and tested in different browsers. It will look amazing in all the devices, Screen Readers included.</p>
     </div>
   </div>
   <div class="row">
@@ -236,15 +246,27 @@
   <h2>Contact me</h2>
   <br>
   <div class="row">
-    <div class="col-sm-4 col-sm-offset-1 well">
-      <p>You like what you see? Hit me up on </p>
+    <div class="well col-sm-4 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+      <p>Do you like my work or just want to chat? Hit me up on any of the following:</p>
       <br>
+      <a class="btn btn-social-icon btn-github">
+        <span class="fa fa-github"></span>
+      </a>
+      <a class="btn btn-social-icon btn-twitter">
+        <span class="fa fa-twitter"></span>
+      </a>
+      <a class="btn btn-social-icon btn-facebook">
+        <span class="fa fa-facebook"></span>
+      </a>
+      <a class="btn btn-social-icon btn-instagram">
+        <span class="fa fa-instagram"></span>
+      </a>
     </div>
     <div class="col-sm-4 col-sm-offset-1">
       <br>
       <form class="form-horizontal" method="post" action="#">
         <div class="form-group">
-          <label for="contactName" class="col-md-2 control-label"></label>
+          <label for="contactName" class="col-md-2 control-label">Name</label>
           <div class="col-md-9 col-md-offset-1">
             <input type="text" name="name" maxlength="16" class="form-control" id="inputName" placeholder="Name">
           </div>
