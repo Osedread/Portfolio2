@@ -142,6 +142,16 @@ section {
 
 /****** SKILLS ******/
 
+.hidden-skill {
+	
+}
+
+.btn-skill {
+	width: 280px;
+	color: black;
+	background-color: white;
+}
+
 #skills .row {
 	margin-top: auto;
 	overflow: hidden;
