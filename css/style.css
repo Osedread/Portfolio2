@@ -143,7 +143,7 @@ section {
 /****** SKILLS ******/
 
 .hidden-skill {
-	
+	transition: visibility 1s linear;
 }
 
 .btn-skill {
