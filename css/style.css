@@ -128,13 +128,6 @@ section {
 	top: 50%;
 	transform: translateY(-50%);
 }
-
-#ld-chevron-wrapper {
-	/* Style for positioning the chevron in the landing */
-	position: absolute;
-	bottom: 10%;
-}
-
 #jumbo-mobile {
 	/* Since the jumbotron collapses when it reaches 300-400px,
 	I find this solution brings less headaches as well as not 
@@ -145,6 +138,19 @@ section {
 	border: 2px solid white;
 }
 
+#ld-chevron-wrapper {
+	/* Style for positioning the chevron in the landing */
+	position: absolute;
+	bottom: 10%;
+}
+
+#chevron-about,
+#chevron-projects {
+	color: rgba(44, 155, 208, 0.8) !important;
+}
+
+
+
 #jumbotron,
 #jumbo-mobile {
 	animation: FadeInOut 8s ease-in-out 0s infinite;
@@ -153,9 +159,9 @@ section {
 
 /****** ABOUT ******/
 
-#chevron-about,
-#chevron-projects {
-	color: rgba(44, 155, 208, 0.8) !important;
+.blue-line {
+	background-color: blue;
+	width: 100vh;
 }
 
 /****** SKILLS ******/
