@@ -65,7 +65,7 @@ section {
 }
 
 .well {
-	background-color: rgba(79, 116, 165, 0.5);
+	background-color: rgba(79, 116, 165, 0.8);
 	color: white;
 }
 
@@ -98,6 +98,18 @@ section {
 
 
 /****** LANDING WEBSITE ******/
+
+@keyframes FadeInOut {
+	0% {
+		opacity: 0.7;
+	}
+	70% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 0.7;
+	}
+}
 
 .landing {
 	
@@ -133,11 +145,17 @@ section {
 	border: 2px solid white;
 }
 
+#jumbotron,
+#jumbo-mobile {
+	animation: FadeInOut 8s ease-in-out 0s infinite;
+}
+
 
 /****** ABOUT ******/
 
-#chevron-about {
-	color: rgba(44, 155, 208, 0.8);
+#chevron-about,
+#chevron-projects {
+	color: rgba(44, 155, 208, 0.8) !important;
 }
 
 /****** SKILLS ******/
