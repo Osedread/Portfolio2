@@ -17,7 +17,7 @@ Black;
 
 
 /****** Web Fonts ******/
-
+/*
 @font-face {
     font-family: 'walkway';
     src: url('Walkway_UltraBold-webfont.eot');
@@ -32,41 +32,48 @@ Black;
 
 /****** GENERAL LAYOUT and re-styling ******/
 
-* {
-	font-family: 'walkway', Arial, sans-serif;
-	font-size: 20px;
+body {
+	font-family: "Lato", sans-serif;
+	
 }
 
-title {
-	margin: 3em 0 2em 0;
+h1, h2, h3, h4, #myNavbar ul a {
+	font-family: "Share Tech Mono", monospace;
+}
+
+h1 {
+	font-size: 0.7em;
+}
+
+.title {
+	font-size: 2.8em;
+	font-weight: bold;
+
+}
+
+p {
+	font-size: 1.5em;
+	margin-bottom: 1em;
 }
 
 a {
 	text-decoration: none !important;
+	color: rgb(250, 111, 0);
 }
 
 section {
 	padding: 3em 0 5em 0;
 }
 
+.hvr-underline-from-center:before {
+	background-color: rgb(250, 111, 0);
+}
 .chevron {
-	color: rgba(255, 255, 255, 0.5);
-	display: block;
+	color: rgb(250, 111, 0);
 	font-size: 3em;
 	margin: 0 auto;
 	text-align: center;
-}
-
-#contact, 
-#skills {
-	background-size: cover;
-	background: url("../images/bg2.jpg") no-repeat center center fixed;
-	color: #fff;
-}
-
-.well {
-	background-color: rgba(79, 116, 165, 0.8);
-	color: white;
+	font-size: 6em;
 }
 
 
@@ -77,7 +84,7 @@ section {
 }
 
 .navbar-default .navbar-nav li a:hover {
-    color: rgb(44, 155, 208);
+    color: rgb(250, 111, 0);
     text-shadow: 0 1px 0 rgb(79, 116, 165);
 }
 
@@ -101,52 +108,83 @@ section {
 
 @keyframes FadeInOut {
 	0% {
-		opacity: 0.7;
+		opacity: 1;
 	}
 	70% {
 		opacity: 0.3;
 	}
 	100% {
-		opacity: 0.7;
+		opacity: 1;
 	}
 }
 
-.landing {
-	
-	min-height: 100vh;
-	min-width: auto;
-	margin-bottom: 2em;
-	background: url("../images/bg2.jpg") no-repeat center center fixed;
+.pillar {
+	position: fixed;
+	right: -15%;
+	background-color: white;
+	width: 20%;
+	height: 120%;
+	-webkit-transform: rotate(11deg);
+    -moz-transform: rotate(11deg);
+    -ms-transform: rotate(11deg);
+    -o-transform: rotate(11deg);
+    transform: rotate(11deg);
+	/* Effort to get rid of the bloody pixels in the pillar */
+	transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+}
+
+.line {
+	position: absolute;
+	width: 120%;
+	height: 0.25%;
+	background-color: rgb(250, 111, 0);
+	top: 40%;
+	left:  -5%;
+	-webkit-transform: rotate(-13deg);
+    -moz-transform: rotate(-13deg);
+    -ms-transform: rotate(-13deg);
+    -o-transform: rotate(-13deg);
+    transform: rotate(-13deg);
+}
+
+header {
 	background-size: cover;
+	background: rgb(9, 9, 9);
+	padding-bottom: 2em;
+	min-height: 100vh;
 	position: relative;
 }
 
+
+
 #jumbotron {
-	border: 2px solid white;
 	color: white;
+	font-size: 7em !important;
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	transform: translateY(-50%);
 }
+
 #jumbo-mobile {
 	/* Since the jumbotron collapses when it reaches 300-400px,
 	I find this solution brings less headaches as well as not 
 	changing the User Experience */
+	border: 2px solid white;
+	bottom: 20%;
 	color: white;
 	position: absolute;
-	bottom: 20%;
-	border: 2px solid white;
 }
 
 #ld-chevron-wrapper {
 	/* Style for positioning the chevron in the landing */
-	position: absolute;
 	bottom: 10%;
+	position: absolute;
 }
 
 #chevron-about,
 #chevron-projects {
-	color: rgba(44, 155, 208, 0.8) !important;
+	color: black; /* rgba(44, 155, 208, 0.8) !important; */
 }
 
 
@@ -159,30 +197,26 @@ section {
 
 /****** ABOUT ******/
 
-.blue-line {
-	background-color: blue;
-	width: 100vh;
+#about,
+#contact {
+	background: rgb(250, 111, 0);
 }
+
 
 /****** SKILLS ******/
 
-.hidden-skill {
-	transition: visibility 1s linear;
-}
-
-.btn-skill {
-	width: 280px;
-	color: black;
-	background-color: white;
-}
-
-#skills .row {
-	margin-top: auto;
-	overflow: hidden;
+#skills {
+	background-size: cover;
+	background: rgb(1, 1, 1);
+	color: #fff;
 }
 
 
 /****** PROJECTS ******/
+
+#projects {
+	background: rgb(69, 69, 69);
+}
 
 .project-img {
 	background-size: cover;
@@ -190,3 +224,5 @@ section {
 	height: auto;
 	padding: 2rem;
 }
+
+/****** CONTACT ******/
