@@ -135,7 +135,7 @@ section {
 }
 
 .line {
-	position: absolute;
+	position: fixed;
 	width: 120%;
 	height: 0.25%;
 	background-color: rgb(250, 111, 0);
@@ -215,7 +215,8 @@ header {
 /****** PROJECTS ******/
 
 #projects {
-	background: rgb(69, 69, 69);
+	background: rgb(49, 49, 49);
+	color: black;
 }
 
 .project-img {

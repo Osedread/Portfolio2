@@ -6,8 +6,7 @@
         return this.each(function() {
             
             $(this).css({
-              opacity: 1.0,
-              visibility: "visible"})
+              opacity: 1.0})
             .animate({opacity: 0});
         });
     };
@@ -15,20 +14,16 @@
         return this.each(function() {
           
             $(this).css({
-              opacity: 0,
-              visibility: "visible"})
+              opacity: 0})
             .animate({opacity: 1.0});
 
         });
     };
 }(jQuery));
 
-$("#about img, #about p").invisible();
-
 
 //JQuery DOM Ready Function
 $(document).ready(function() {
-
 	////// Smooth Scroll
     var scrollToAnchor = function( id ) {
     // grab the element to scroll to based on the name
@@ -57,10 +52,10 @@ $(document).ready(function() {
       }
     });
 
-    $("#about").on("mouseenter", function() {
-      $("section img").visible().addClass("bounceInLeft");
-      $("section p").visible().addClass("bounceInRight");
-    });
+         
 });
 
 //////////////// Finish $(function) ////////////////////////
+
+// WINDOWS.LOAD function //
+
