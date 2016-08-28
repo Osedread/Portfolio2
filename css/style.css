@@ -65,6 +65,19 @@ section {
 	padding: 3em 0 5em 0;
 }
 
+.arrow-up {
+	position: absolute;
+	left: 10%;
+	bottom: 20%;
+	font-size: 8em;
+	color: rgb(250, 111, 0);
+	-webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+
 .hvr-underline-from-center:before {
 	background-color: rgb(250, 111, 0);
 }
@@ -135,8 +148,8 @@ section {
 }
 
 .line {
-	position: fixed;
-	width: 120%;
+	position: absolute;
+	width: 106.1%;
 	height: 0.25%;
 	background-color: rgb(250, 111, 0);
 	top: 40%;
@@ -146,6 +159,7 @@ section {
     -ms-transform: rotate(-13deg);
     -o-transform: rotate(-13deg);
     transform: rotate(-13deg);
+    overflow: hidden;
 }
 
 header {

@@ -55,22 +55,22 @@
 <!-- LANDING -->
 
 <header id="home" class="container-fluid">
-    <svg class="line"></svg>
-  <div class="row">
-    <div class="col-xs-1 col-xs-offset-11"><span class="pillar hidden-xs"></span></div>
-  </div>
-    <span class="pillar"></span>
 
+    <svg class="line"></svg>
+    <div class="pillar">
+    <a href="#home"><span class="arrow-up fa fa-angle-double-up hvr-pulse-grow"></span></a>
+    </div>
+    
   <div class="row">
     <div id="jumbotron" class="hidden-xs col-sm-0 col-sm-offset-1">
-      <h1>Jose Diaz</h1>
-      <h1>Web Developer</h1>
+      <h1 class="animated fadeInUpBig">Jose Diaz</h1>
+      <h2 class="animated fadeInUp"><u>Web-Developer</u></h2>
     </div>
   </div>
   <div class="row">
     <div id="ld-chevron-wrapper" class="hidden-xs text-center col-xs-2 col-xs-offset-5">
         <a href="#about">
-          <span class="aniamted fadeInUpBig fa fa-chevron-down chevron hvr-pulse-grow"></span>
+          <span class="fa fa-chevron-down chevron hvr-pulse-grow"></span>
         </a>
     </div>
   </div>
@@ -92,11 +92,10 @@
       <img src="images/profile2.jpg" alt="profile" class="animated img-responsive img-rounded" />
     </div>
     <div class="col-md-5 col-xs-12">
-      <p class="animated">My name is Jose Diaz-Gonzalez. I am a front-end developer based in Bristol, UK. I first began learning web development in the Summer 2015. On 2016, I joined the Open University as a part-time student in Computer Science and will split my time between these.
+      <p class="animated">My name is Jose Diaz-Gonzalez. I am a front-end developer based in Bristol, UK. I'm a avid learner and problem-solver, who's always looking up at new technologies that help me craft the most striking websites.
       </p>
-      <p class="animated">A year after I wrote my first line of code, I'm ready for hire, either for launching your online presence with a detailed crafted website or joining your design agency. I won't stop till I deliver a polished solution that satisfy your expectations.</p>
-      <p class="animated">I'm a avid learner and problem-solver. I'm always looking up new web technologies that will improve the final result. Right now, I'm digging into Sass, SVG, PHP and WordPress. And I'll be really pleased to bring that knowledge into a working example.
-      <p></p>
+      <p class="animated">Right now, I'm sharpening my JavaScript and Jquery skills, but things like Sass, SVG or PHP appeal me. If you want a feature I don't currently know about, I'm more than happy to make my research and learn-on-the-go to implement it. </p>
+      <p class="animated">Beside staying long nights in front a screen, I love playing either Pool or Snooker, Battlestar Galactica and my dog Suka.</p>
     </div>
   </div>
   <div class="row">
@@ -120,16 +119,18 @@
     </div>
     <div class="col-md-6 col-md-offset-2 col-sm-6 col-xs-12">
       <h3>JavaScript</h3>
-      <p>Either with JavaScript, or using one of the many frameworks and libreries out there, I'll make sure all the animations work like a charm.</p>
+      <p>Either with JavaScript, or using one of the many frameworks and libraries out there, I'll make sure all the animations and interactivity of your site work like a charm.</p>
     </div>
     <div class="col-md-6 col-md-offset-2 col-sm-6 col-xs-12">
       <h3>Mobile friendly</h3>
-      <p>With the help of BootStrap we'll ensure that your website is fully responsive to all types of electronic devices and tested in different browsers. It will look amazing in all the devices, Screen Readers included.</p>
+      <p>With the help of BootStrap and media queries I will make sure that your website is fully responsive to all types of electronic devices and tested in different browsers. It will look amazing in all the devices, Screen Readers included.</p>
     </div>
+    <!-- 
     <div class="col-md-6 col-md-offset-2 col-sm-6 col-xs-12">
       <h3>Photoshop and Illustrator</h3>
       <p>Got a Photoshop document? It's easy for me develop it into a website. What about your own logo? We can have a look at it too.</p>
     </div>
+    -->
     <div class="col-md-6 col-md-offset-2 col-sm-6 col-xs-12">
       <h3>Git</h3>
       <p>I use Git as my default version control system. It helps me track the changes in the project and experiment with future features.</p>
@@ -155,109 +156,24 @@
 
 
 <!-- PROJECTS -->
+<!-- 
+     <img src="images/pj1.jpg" class="img-responsive" alt="1">
+     -->
 
 <section id="projects">
         <div class="container-fluid text-center">
-            <h2 class="title">PROJECTS</h2>
-            
-            <p>These are the things I've done</p>
-            <div class="row">
-                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
-                    <a class="portfolio-box" href="http://www.gpxv.com/proj1/guessgamejs.html" data-lightbox="image-1" data-title="Your caption">
-                        <img src="images/pj1.jpg" class="img-responsive" alt="1">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Guess Game
-                                </div>
-                                <div class="project-name">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                
-                <!-- FUTURE PROJECTS 
+          <h2 class="title">PROJECTS</h2>
+          <p>These are the things I've done</p>
+          <div class="row">
+            <div class="col-xs-11 col-xs-offset-1 col-md-4">
+              <a class="" href="http://www.gpxv.com/proj1/guessgamejs.html">
+              <img src="images/pj1.jpg" class="img-responsive" alt="GuessGameJS">
+              </a>    
 
-                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
-                    <a href="img/portfolio/2.jpg" class="portfolio-box" data-lightbox="image-2" data-title="Your caption">
-                        <img src="http://dummyimage.com/600x400/000/fff" class="img-responsive" alt="2">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
-                    <a href="img/portfolio/3.jpg" class="portfolio-box" data-lightbox="image-3" data-title="Your caption">
-                        <img src="http://dummyimage.com/600x400/000/fff" class="img-responsive" alt="3">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
-                    <a href="img/portfolio/4.jpg" class="portfolio-box" data-lightbox="image-4" data-title="Your caption">
-                        <img src="http://dummyimage.com/600x400/000/fff" class="img-responsive" alt="4">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
-                    <a href="img/portfolio/5.jpg" class="portfolio-box" data-lightbox="image-5" data-title="Your caption">
-                        <img src="http://dummyimage.com/600x400/000/fff" class="img-responsive" alt="5">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
-                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
-                        <img src="http://dummyimage.com/600x400/000/fff" class="img-responsive" alt="6">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                -->
+            
             </div>
-        
+          </div>
+
 <div class="row">
     <div class="hidden-xs text-center">
         <a href="#contact">
