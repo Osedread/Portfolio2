@@ -65,11 +65,31 @@ section {
 	padding: 3em 0 5em 0;
 }
 
+.pillar {
+	position: fixed;
+	right: -15%;
+	background:
+		linear-gradient(135deg,
+			rgb(250, 250, 250),
+			rgb(0, 0, 0)
+			);
+	width: 20%;
+	height: 120%;
+	-webkit-transform: rotate(11deg);
+    -moz-transform: rotate(11deg);
+    -ms-transform: rotate(11deg);
+    -o-transform: rotate(11deg);
+    transform: rotate(11deg);
+	/* Effort to get rid of the bloody pixels in the pillar */
+	transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+}
+
 .arrow-up {
 	position: absolute;
 	left: 10%;
 	bottom: 20%;
-	font-size: 8em;
+	font-size: 5em;
 	color: rgb(250, 111, 0);
 	-webkit-transform: rotate(-15deg);
     -moz-transform: rotate(-5deg);
@@ -81,6 +101,7 @@ section {
 .hvr-underline-from-center:before {
 	background-color: rgb(250, 111, 0);
 }
+
 .chevron {
 	color: rgb(250, 111, 0);
 	font-size: 3em;
@@ -131,21 +152,7 @@ section {
 	}
 }
 
-.pillar {
-	position: fixed;
-	right: -15%;
-	background-color: white;
-	width: 20%;
-	height: 120%;
-	-webkit-transform: rotate(11deg);
-    -moz-transform: rotate(11deg);
-    -ms-transform: rotate(11deg);
-    -o-transform: rotate(11deg);
-    transform: rotate(11deg);
-	/* Effort to get rid of the bloody pixels in the pillar */
-	transform-style: preserve-3d;
-    -webkit-backface-visibility: hidden;
-}
+
 
 .line {
 	position: absolute;
@@ -180,16 +187,6 @@ header {
 	transform: translateY(-50%);
 }
 
-#jumbo-mobile {
-	/* Since the jumbotron collapses when it reaches 300-400px,
-	I find this solution brings less headaches as well as not 
-	changing the User Experience */
-	border: 2px solid white;
-	bottom: 20%;
-	color: white;
-	position: absolute;
-}
-
 #ld-chevron-wrapper {
 	/* Style for positioning the chevron in the landing */
 	bottom: 10%;
@@ -213,7 +210,13 @@ header {
 
 #about,
 #contact {
-	background: rgb(250, 111, 0);
+	background:
+		linear-gradient(
+			135deg,
+			rgb(250, 111, 0),
+			rgb(108, 58, 0)
+			);
+	
 }
 
 
