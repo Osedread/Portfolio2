@@ -6,29 +6,6 @@
 
 
 /**************************** ******************************/
-/* Main Colors [turn into vars when Sass]
-
-First: rgb(9,9,9);
-Second: White;
-Third: rgb(167, 167, 167);
-
-Black;
-*/
-/**************************** ******************************/
-
-
-/****** Web Fonts ******/
-/*
-@font-face {
-    font-family: 'walkway';
-    src: url('Walkway_UltraBold-webfont.eot');
-    src: url('Walkway_UltraBold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Walkway_UltraBold-webfont.woff') format('woff'),
-         url('Walkway_UltraBold-webfont.ttf') format('truetype'),
-         url('Walkway_UltraBold-webfont.svg#walkway_ultraboldregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
 
 /****** GENERAL LAYOUT and re-styling ******/
@@ -38,12 +15,16 @@ body {
 	color: black;
 }
 
-h1, h2, h3, h4, #myNavbar ul a {
+h1, h2, h3, h4, nav ul a {
 	font-family: "Share Tech Mono", monospace;
 }
 
 h1 {
 	font-size: 0.7em;
+}
+
+h2 {
+	text-shadow: 1px 1px rgb(167, 167, 167);
 }
 
 .title {
@@ -54,10 +35,10 @@ h1 {
 p {
 	font-size: 1.5em;
 	margin-bottom: 1em;
-	text-shadow: 1px 1px rgb(167, 167, 167);
+	
 }
 
-a {
+a, button {
 	color: rgb(250, 111, 0);
 	text-decoration: none !important;
 }
@@ -75,7 +56,6 @@ section {
 	font-size: 5em;
 	transition: font-size 0.4s ease-out 0.2s;
 	margin: 0 auto;
-	text-align: center;
 }
 
 .chevron:hover {
@@ -86,30 +66,24 @@ section {
 
 /****** NAVIGATION ******/
 
-.navigation {
-	margin-bottom: 0;
-	opacity: 0;
-
-}
-
-#nav {
+.navbar {
 	background-color: rgb(9, 9, 9);
-	border: 0;
 	color: white;
 	font-size: 1.5em;
-	list-style: none;
-	margin: 2em;
 	position: absolute;
+	text-decoration: none;
 }
 
 nav a {
 	border-bottom: 2px solid rgba(250, 250, 250, 0);
 	margin-right: 20px;
 	transition-duration: .7s;
+	color: white;
 }
 
 nav a:hover {
-	border-bottom: 2px solid rgba(250, 250, 250, 1);
+	border-bottom: 2px solid rgba(220, 220, 220, 0.5);
+	color: rgba(220, 220, 220, 0.5);
 }
 
 /****** LANDING WEBSITE ******/
@@ -140,15 +114,9 @@ header {
 	color: white;
 	font-size: 7em !important;
 	position: absolute;
-	top: 40%;
+	top: 60%;
 	transform: translateY(-50%);
 	width: auto;
-}
-
-#ld-chevron-wrapper {
-	/* Style for positioning the chevron in the landing */
-	bottom: 10%;
-	position: absolute;
 }
 
 #jumbotron,
@@ -159,56 +127,52 @@ header {
 
 /****** PROJECTS ******/
 
-#projects {
-	background:
-		linear-gradient(
-			rgb(9, 9, 9),
-			rgb(250, 250, 250) 40%
-			);
-	color: rgb(9, 9, 9);
+#work {
+	background-color: rgb(40, 40, 40);
+	color: rgb(220, 220, 220);
 }
 
 figure {
-	box-shadow: 10px 10px 6px 2px rgb(167, 167, 167);
+	box-shadow: 10px 10px 6px 2px rgb(9, 9, 9);
 	display: table;
 	overflow: hidden;
 	position: relative;
 }
 
 figcaption {
-	font-size: 1.2em;
-	background: rgba(0, 0, 0, 0.7);
-	caption-side: center;
-	color: rgba(250, 250, 250 , 0.6);
-	opacity: 0;
-	padding: 1em 0.5em;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0; 
-	left: 0;
-	padding-left: 20px;
-	padding-right: 20px;
 
+	
+	align-items: center;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.7);
+	bottom: 0; 
+	color: rgb(220, 220, 220);
+	color: rgba(220, 220, 220 , 1);
 	display: flex; /* For centering text inside .photo-overlay */
 	flex-direction: column;
+	font-size: 1.2em;
 	justify-content: center;
-	align-items: center;
-
+	left: 0;
+	opacity: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding: 1em 0.5em;
+	position: absolute;
+	right: 0;
+	top: 0;
 	transition: all 0.6s ease;
 		-webkit-transition: all 0.6s ease;
   		-moz-transition:    all 0.6s ease;
   		-o-transition:      all 0.6s ease;
 }
 
-figure:hover figcaption {
-	opacity: 1;
-}
+figure:hover figcaption { opacity: 1; }
 
 .cap-bot:before { bottom: 10px; left: 10px; }
-.cap-bot figcaption { left: 0; bottom: -30%;}
-.cap-bot:hover figcaption { bottom: 0; }
 
+.cap-bot figcaption { bottom: -30%; left: 0; }
+
+.cap-bot:hover figcaption { bottom: 0; }
 
 .project-img {
 	background-size: cover;
@@ -221,8 +185,7 @@ figure:hover figcaption {
 /****** ABOUT ********/
 
 #about {
-	background:	rgb(250, 250, 250);
-	padding-top: 200px;
+	background:	rgb(220, 220, 220);
 }
 
 #about img {
@@ -234,11 +197,7 @@ figure:hover figcaption {
 /****** FOOTER ******/
 
 #footer {
-	background:
-		linear-gradient(
-			rgb(250, 250, 250) 30%,
-			rgb(9, 9, 9)
-			);	
+	background-color: rgb(250, 250, 250);	
 }
 
 .btn-cp {

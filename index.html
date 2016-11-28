@@ -14,7 +14,7 @@
 
 <!--  ///// CSS ///// -->
 
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/bootstrap-social.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato|Share+Tech+Mono" rel="stylesheet">
@@ -30,67 +30,60 @@
 
 <!-- NAVIGATION BAR -->
 
-<nav  id="nav" class="navigation navbar navbar-inverse navbar-static-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+<nav class="navbar navbar-full offset-sm-1">
+    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#CollapseNavBar" aria-controls="CollapseNavBar" aria-expanded="false" aria-label="Toggle navigation">
+        &#9776;
       </button>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+      <div class="collapse navbar-toggleable-xs" id="CollapseNavBar">
       <ul class="nav navbar-nav">
-        <li><a href="#home" class="hvr-underline-from-center">Home</a></li>
-        <li><a href="#work" class="hvr-underline-from-center">Work</a></li>
-        <li><a href="#about-anchor" class="hvr-underline-from-center">About</a></li>
+        <div class="pull-sm-right">
+          <li class="nav-item"><a class="nav-link" href="#" title="">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" title="">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" title="">Work</a></li>
+        </div>
       </ul>
-      </div>
-  </div>
-</nav>
+    </div>
+  </nav>
 
 
 <!-- LANDING -->
 
 <header id="home" class="container-fluid">
 
-    <svg class="line1"></svg>
-    <div class="hidden pillar">
-    <a href="#home"><span class="arrow-up fa fa-angle-double-up hvr-pulse-grow"></span></a>
-    </div>
 
   <div class="row">
-    <div id="jumbotron" class="col-sm-4 col-sm-offset-1">
-      <h1 class="">Edu Diaz</h1>
+    <div id="jumbotron" class="col-sm-4 offset-sm-1">
+      <h1 class="">Jose Diaz</h1>
       <h2 class=""><u>Front-End Developer</u></h2>
     </div>
   </div>
-  <div class="row">
-    <div id="ld-chevron-wrapper" class="text-center col-xs-2 col-xs-offset-5">
-        <a href="#work">
-          <span class="hidden-xs fa fa-chevron-down chevron"></span>
-        </a>
-    </div>
-  </div>
+  
 </header>
 
 <!-- WORK -->
 
 <section id="work">
-        <div class="container-fluid text-center">
-            <h2 class="title">WORK</h2>
+        <div class="container-fluid offset-sm-1 text-center">
+            <h2 class="title ">- WORK -</h2>
             <p>These are the things I've done</p>
           <div class="row">
-            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-1">
+            <div class="col-xs-10 col-sm-8 col-md-4">
               <figure class="cap-bot">
                 <a class="" href="http://www.gpxv.com/proj1/guessgamejs.html">
-                  <img src="images/pj1.jpg" class="img-responsive" alt="GuessGameJS">
-                  <figcaption class="text-center">Guess game written in Vanilla Javascript</figcaption>
+                  <img src="images/pj1.jpg" class="img-fluid" alt="GuessGameJS">
+                  <figcaption class="text-center">Guess game</figcaption>
                 </a>
               </figure>
             </div>
-            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-2">
+            <div class="col-xs-10 col-sm-8 col-md-4">
+              <figure class="cap-bot">
+                <a class="" href="http://www.collinscoffee.jdiaz.co.uk/">
+                  <img src="images/collins.jpg" class="img-fluid" alt="CoffeeShopWebsite">
+                  <figcaption class="text-center">Website for a fictitious coffee shop</figcaption>
+                </a>
+              </figure>
             </div>
+            
           </div>
         </div>
 
@@ -99,12 +92,12 @@
 <!-- ABOUT -->
 
 <section id="about" class="container-fluid">
-  <h2 id="about-anchor" class="title text-center">ABOUT</h2>
+  <h2 id="about-anchor" class="offset-sm-1 title text-center">- ABOUT -</h2>
   <div class="row">
-    <div class="col-xs-8 col-xs-offset-2 col-sm-2 col-sm-offset-2">
-      <img src="images/profile2.jpg" alt="profile" class="img-responsive img-rounded img-thumbnail" />
+    <div class="col-xs-8 offset-sm-2 col-sm-2 ">
+      <img src="images/profile2.jpg" alt="profile" class="img-fluid img-rounded img-thumbnail" />
     </div>
-    <div class="col-xs-12 col-sm-5">
+    <div class="col-xs-12 col-sm-5 text-xs-justify">
       <p class="">I am a web developer based in Bristol, UK. I am specialising in creating websites, emphasizing all my work in a sharp result full of interactivity. I'll grow your brand by giving it the online presence that every business needs nowadays.
       </p>
       <p class="">I'm a avid learner and problem-solver, who's always looking up at new technologies that help me craft the most striking sites. So if you dream it, I build it.
@@ -118,9 +111,9 @@
 
 <!-- Footer -->
 
-<section id="footer" class="container-fluid text-center">
+<section id="footer" class="container-fluid text-xs-center">
     <div class="row">
-    <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4">
+    <div class="col-xs-12">
       <p>Do you like my work? I'm available to hire! Drop me an email so we can talk in detail.</p>
        <br>
       <a href="https://github.com/Osedread" class="btn-lg btn btn-social-icon btn-github">
