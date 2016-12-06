@@ -375,8 +375,14 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/C/Users/Jose/Documents/Web Dev/Projects/Portfolio2"
+	],
 	"file_history":
 	[
+		"/C/Users/Jose/Documents/Web Dev/Projects/Portfolio3/css/style.css",
+		"/C/Users/Jose/Documents/Web Dev/Projects/Portfolio3/index.html",
 		"/C/Users/Jose/Documents/Web Dev/Projects/Portfolio2/js/custom.js",
 		"/C/Users/Jose/Documents/Web Dev/Projects/Portfolio2/index.html",
 		"/C/Users/Jose/Documents/Web Dev/Projects/Portfolio2/css/style.css",
@@ -420,7 +426,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 55.0
 	},
 	"find_in_files":
 	{
@@ -471,7 +477,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -504,11 +510,15 @@
 	{
 		"height": 0.0
 	},
+	"output.unsaved_changes":
+	{
+		"height": 98.0
+	},
 	"pinned_build_system": "",
-	"project": "contact.sublime-project",
+	"project": "personalweb.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 106.0
 	},
 	"save_all_on_build": true,
 	"select_file":

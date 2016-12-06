@@ -1,30 +1,18 @@
-////////////////////
-
-// Create fade effect methods in JQuery
-(function($) {
-    $.fn.invisible = function() {
-        return this.each(function() {
-            
-            $(this).css({
-              opacity: 1.0})
-            .animate({opacity: 0});
-        });
-    };
-    $.fn.visible = function() {
-        return this.each(function() {
-          
-            $(this).css({
-              opacity: 0})
-            .animate({opacity: 1.0});
-
-        });
-    };
-}(jQuery));
 
 
 //JQuery DOM Ready Function
 $(document).ready(function() {
-	////// Smooth Scroll
+
+  ///// Fade In of the jumbotron at the beginning
+  $("#jumbotron").delay(2000).animate( { opacity: 1 }, 1300);
+
+  $("#work a").preventDefault().
+
+
+
+
+
+	///// Smooth Scroll
     var scrollToAnchor = function( id ) {
     // grab the element to scroll to based on the name
     var elem = $("a[name='"+ id +"']");
@@ -52,10 +40,7 @@ $(document).ready(function() {
       }
     });
 
-         
+
 });
 
 //////////////// Finish $(function) ////////////////////////
-
-// WINDOWS.LOAD function //
-
