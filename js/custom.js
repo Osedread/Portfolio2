@@ -1,19 +1,19 @@
-
+$("#jumbotron").hide();
 
 //JQuery DOM Ready Function
 $(document).ready(function() {
 
   ///// Fade In of the jumbotron at the beginning
-  $("#jumbotron").delay(2000).animate( { opacity: 1 }, 1300);
+  $("#jumbotron").delay(2000).fadeIn("slow");
 
-  $("#work a").preventDefault().
+  
 
 
 
 
 
 	///// Smooth Scroll
-    var scrollToAnchor = function( id ) {
+    var scrollToAnchor = function(id) {
     // grab the element to scroll to based on the name
     var elem = $("a[name='"+ id +"']");
     // if that didn't work, look for an element with our ID
