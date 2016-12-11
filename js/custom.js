@@ -4,7 +4,9 @@ $("#jumbotron").hide();
 $(document).ready(function() {
 
   ///// Fade In of the jumbotron at the beginning
-  $("#jumbotron").delay(2000).fadeIn("slow");
+  $("#jumbotron").delay(1000).fadeIn("slow", function() {
+      $(this).addClass("fading");
+  });
 
   
 

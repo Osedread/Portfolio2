@@ -30,7 +30,7 @@ p {
 
 a, button {
 	color: white;
-	text-decoration: none !important;
+	text-decoration: none ;
 }
 
 section {
@@ -49,15 +49,25 @@ section {
 }
 
 nav a {
+	border-bottom: 2px solid rgb(250, 250, 250);
 	border-bottom: 2px solid rgba(250, 250, 250, 0);
-	margin-right: 20px;
-	transition-duration: .7s;
 	color: white;
+	margin-right: 20px;
+	text-decoration: none;
+	transition-duration: .7s;
 }
 
 nav a:hover {
+	border-bottom: 2px solid rgb(220, 220, 220);
 	border-bottom: 2px solid rgba(220, 220, 220, 0.5);
+	color: rgb(220, 220, 220);
 	color: rgba(220, 220, 220, 0.5);
+}
+
+nav a:focus {
+	color: rgb(220, 220, 220);
+	color: rgba(220, 220, 220, 0.5);
+	text-decoration: none;
 }
 
 /****** LANDING WEBSITE ******/
@@ -77,22 +87,18 @@ nav a:hover {
 header {
 	background-size: cover;
 	background: rgb(9, 9, 9);
-	min-height: 100vh;
+	height: 100vh;
 	overflow: hidden;
-
-	padding-bottom: 2em;
 	position: relative;
 }
 
-#jumbotron {
-	
-	color: white;
-	
-	position: absolute;
-	top: 50%;
-	left: 35%;
-	transform: translateY(-50%);
-	width: auto;
+header div div {
+	color: white;	
+	height: 100vh;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .fading {
@@ -102,7 +108,7 @@ header {
 
 /****** PROJECTS ******/
 
-#work {
+header + section {
 	background-color: rgb(40, 40, 40);
 	color: rgb(220, 220, 220);
 }
@@ -159,11 +165,11 @@ figure:hover figcaption { opacity: 1; }
 
 /****** ABOUT ********/
 
-#about {
-	background:	rgb(220, 220, 220);
+section:nth-child(4) {
+	background: rgb(220, 220, 220);
 }
 
-#about img {
+section:nth-child(4) img {
 	border: 3px solid black;
 	box-shadow: 10px 10px 6px 2px rgb(167, 167, 167);
 }
@@ -171,7 +177,7 @@ figure:hover figcaption { opacity: 1; }
 
 /****** FOOTER ******/
 
-#footer {
+footer {
 	background-color: rgb(250, 250, 250);
 }
 
