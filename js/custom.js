@@ -1,11 +1,15 @@
-$("#jumbotron").hide();
+var $jumbo = $("#jumbotron");
+var $nav = $("nav li");
+$jumbo.hide();
+$nav.hide();
 
 //JQuery DOM Ready Function
 $(document).ready(function() {
 
   ///// Fade In of the jumbotron at the beginning
-  $("#jumbotron").delay(1000).fadeIn("slow", function() {
+  $jumbo.delay(1000).fadeIn("slow", function() {
       $(this).addClass("fading");
+      $nav.delay(1000).fadeIn("slow");
   });
 
   
