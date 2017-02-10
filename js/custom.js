@@ -12,11 +12,6 @@ $(document).ready(function() {
       $nav.delay(1000).fadeIn("slow");
   });
 
-  
-
-
-
-
 
 	///// Smooth Scroll
     var scrollToAnchor = function(id) {
