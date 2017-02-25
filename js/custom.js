@@ -1,5 +1,6 @@
 var $jumbo = $("#jumbotron");
 var $nav = $("nav li");
+var $figure = $("figure");
 $jumbo.hide();
 $nav.hide();
 
@@ -12,6 +13,11 @@ $(document).ready(function() {
       $nav.delay(1000).fadeIn("slow");
   });
 
+  ///// Resizing of projects on hover
+    $figure.on("mouseover", function() {
+        $(this).children("img").css("width", "120%")
+                                .css("height", "120%");
+    });
 
 	///// Smooth Scroll
     var scrollToAnchor = function(id) {
