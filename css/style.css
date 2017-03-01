@@ -112,9 +112,21 @@ header div div {
 }
 
 
+/****** ABOUT ********/
+
+section:nth-child(3) {
+	background: rgb(9, 9, 9);
+	color: rgb(220, 220, 220);
+}
+
+section:nth-child(3) img {
+	border: 1px solid rgb(220, 220, 220);
+	border-radius: 6px;
+}
+
 /****** PROJECTS ******/
 
-header + section {
+section:nth-child(4) {
 	background-color: rgb(40, 40, 40);
 	color: rgb(220, 220, 220);
 }
@@ -167,23 +179,9 @@ figure:hover figcaption { opacity: 1; }
 
 .img-fluid {
 	background-size: cover;
-	height: 100%;
-	width: 100%;
 }
 
-
-/****** ABOUT ********/
-
-section:nth-child(4) {
-	background: rgb(9, 9, 9);
-	color: rgb(220, 220, 220);
-}
-
-section:nth-child(4) img {
-	border: 3px solid black;
-	box-shadow: 10px 10px 6px 2px rgb(167, 167, 167);
-}
-
+ 
 
 /****** FOOTER ******/
 
