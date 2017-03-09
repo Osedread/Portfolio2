@@ -30,7 +30,12 @@ p {
 
 a, button {
 	color: white;
-	text-decoration: none ;
+	text-decoration: none 
+;}
+
+a:hover {
+	text-decoration: none;
+	color: rgb(220, 220, 220);
 }
 
 section {
@@ -64,7 +69,7 @@ nav a:hover {
 	color: rgb(220, 220, 220);
 	color: rgba(220, 220, 220, 0.5);
 	text-shadow: 1px 1px rgb(9, 9, 9);
-	font-size: 1.1em;
+	
 }
 
 nav a:focus {
