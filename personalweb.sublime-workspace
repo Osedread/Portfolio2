@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"tex",
+				"text-decoration"
+			],
+			[
 				"backgrou",
 				"background-size"
 			],
@@ -78,10 +82,6 @@
 			[
 				"a",
 				"auto"
-			],
-			[
-				"tex",
-				"text-shadow"
 			],
 			[
 				"img",
@@ -312,13 +312,11 @@
 	"buffers":
 	[
 		{
-			"contents": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\n\n  <title>J. Diaz | Web Developer</title>\n\n  <meta charset=\"UTF-8\">\n\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <meta name=\"description\" content=\"Bristol based web developer focused on creating mobile-friendly websites using HTML, CSS, JavaScript, Jquery and Bootstrap.\">\n  <meta name=\"keywords\" content=\"web developer, html, css, javascript, jquery, bootstrap, mobile, Bristol, front end developer\">\n  <meta name=\"author\" content=\"Jose Diaz\">\n\n<!--  ///// CSS ///// -->\n\n\t<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css\" integrity=\"sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi\" crossorigin=\"anonymous\">\n  <link href=\"css/font-awesome.min.css\" rel=\"stylesheet\">\n  <link href=\"css/bootstrap-social.css\" rel=\"stylesheet\">\n  <link href=\"https://fonts.googleapis.com/css?family=Lato|Share+Tech+Mono\" rel=\"stylesheet\">\n\n\n\t<link href=\"css/style.css\" rel=\"stylesheet\">\n\n</head>\n\n\n\n<body>\n\n<!-- NAVIGATION BAR -->\n\n<nav class=\"navbar navbar-full offset-sm-1 pull-xs-right\">\n  <button class=\"navbar-toggler hidden-sm-up\" type=\"button\" data-toggle=\"collapse\" data-target=\"#CollapseNavBar\" aria-controls=\"CollapseNavBar\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n        &#9776;\n  </button>\n  <div class=\"collapse navbar-toggleable-xs pull-xs-right\" id=\"CollapseNavBar\">\n    <ul class=\"nav navbar-nav\">\n      <!-- <li class=\"nav-item\"><a class=\"nav-link\" href=\"#home\" title=\"\">Home</a></li> -->\n      <li class=\"nav-item\"><a class=\"nav-link\" href=\"#about\" title=\"\">About</a></li>\n      <li class=\"nav-item\"><a class=\"nav-link\" href=\"#work\" title=\"\">Work</a></li>\n      <!-- <li class=\"nav-item\"><a class=\"nav-link\" href=\"#\" title=\"\">Blog</a></li> -->\n    </ul>\n  </div>\n</nav>\n\n\n<!-- LANDING -->\n\n<header id=\"home\" class=\"container-fluid\">\n  <div class=\"row\">\n    <div id=\"jumbotron\" class=\"text-sm-center\">\n      <h1 class=\"\">Jose Diaz</h1>\n      <h1>Web Developer</h1>\n      \n    </div>\n  </div>\n</header>\n\n<!-- ABOUT -->\n\n<section id=\"about\" class=\"container-fluid\">\n  <div class=\"offset-sm-1\">\n    <h2 id=\"about-anchor\">- ABOUT -</h2>\n    <div class=\"row\">\n      <div class=\"col-xs-8 offset-sm-2 col-sm-2 \">\n        <img src=\"images/profile2.jpg\" alt=\"profile\" class=\"img-fluid rounded\" />\n      </div>\n      <div class=\"col-xs-12 col-sm-5 text-xs-justify m-y-2\">\n        <p class=\"\"><strong>I am a Front-End Developer based in Bristol, UK.</strong></p>\n        <p>I specialise in crafting astonishing websites that please the eyes on any type of screen, smartphones included.</p>\n        <p class=\"\">My set of skills are the sum of the front-end technologies:</p>\n          <ul>\n            <li>HTML5</li>\n            <li>CSS3</li>\n            <li>Javascript</li>\n            <li>Bootstrap</li>\n            <li>jQuery</li>\n            <li>Git</li>\n          </ul>\n      </div>\n    </div>\n  </div>\n</section>\n\n<!-- WORK -->\n\n<section id=\"work\" class=\"container-fluid\">\n  <div class=\"offset-sm-1\">\n    <h2>- WORK -</h2>\n    <p>These are the things I've done</p>\n    <div class=\"row project-container\">\n      <div class=\"col-xs-10 col-sm-8 col-md-4 col-lg-3\">\n        <figure class=\"cap-bot\">\n          <a class=\"\" href=\"http://www.gpxv.com/proj1/guessgamejs.html\">\n            <img src=\"images/pj1.jpg\" class=\"img-fluid\" alt=\"GuessGameJS\">\n            <figcaption class=\"text-center\">Guess game</figcaption>\n          </a>\n        </figure>\n      </div>\n      <div class=\"col-xs-10 col-sm-8 col-md-4 col-lg-3 offset-lg-1\">\n        <figure class=\"cap-bot\">\n          <a class=\"\" href=\"http://www.collinscoffee.jdiaz.co.uk/\">\n            <img src=\"images/collins.jpg\" class=\"img-fluid\" alt=\"CoffeeShopWebsite\">\n            <figcaption class=\"text-center\">Website for a fictitious coffee shop</figcaption>\n          </a>\n        </figure>\n      </div>\n      <div class=\"col-xs-10 col-sm-8 col-md-4 col-lg-3 offset-lg-1\">\n        <figure class=\"cap-bot\">\n          <a class=\"\" href=\"http://www.encryptionapp.jdiaz.co.uk/\">\n            <img src=\"images/encrypt.png\" class=\"img-fluid\" alt=\"GuessGameJS\">\n            <figcaption class=\"text-center\">Encryption app </figcaption>\n          </a>\n        </figure>\n      </div>\n    </div>\n  </div>\n</section>\n\n\n<!-- Footer -->\n\n<footer section id=\"footer\" class=\"container-fluid text-xs-center\">\n  <div class=\"row\">\n    <div class=\"col-xs-12\">\n      <br>\n      <p>Do you like my work? I'm available to hire! Drop me an email so we can talk in detail.</p>\n       <br>\n      <a href=\"https://github.com/Osedread\" class=\"btn-lg btn btn-social-icon btn-github\">\n        <span class=\"fa fa-github\"></span>\n      </a>\n      <a href=\"mailto:osedread@gmail.com\" class=\"btn-lg btn btn-social-icon btn-cp\">\n        <span class=\"fa fa-envelope\"></span>\n      </a>\n      <a href=\"https://uk.linkedin.com/in/josé-díaz-gonzález-696067107\" class=\"btn-lg btn btn-social-icon btn-linkedin\">\n        <span class=\"fa fa-linkedin\"></span>\n      </a>\n      <a href=\"https://twitter.com/Osedread\" class=\"btn-lg btn btn-social-icon btn-twitter\">\n        <span class=\"fa fa-twitter\"></span>\n      </a>\n      <a href=\"https://www.facebook.com/osedg\" class=\"btn-lg btn btn-social-icon btn-facebook\">\n        <span class=\"fa fa-facebook\"></span>\n      </a>\n      <a href=\"https://www.instagram.com/justacabinetmaker/\" class=\"btn-lg btn btn-social-icon btn-google\">\n        <span class=\"fa fa-instagram\"></span>\n      </a>\n    </div>\n  </div>\n  <br>\n</footer>\n\n\n\n  <script\n    src=\"https://code.jquery.com/jquery-3.1.1.min.js\"\n    integrity=\"sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=\"\n    crossorigin=\"anonymous\"></script>\n  <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\n  <script src=\"js/custom.js\"></script>\n\n</body>\n</html>\n",
 			"file": "index.html",
-			"file_size": 6077,
-			"file_write_time": 131328487780451560,
 			"settings":
 			{
-				"buffer_size": 5909,
+				"buffer_size": 5724,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -326,7 +324,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 3167,
+				"buffer_size": 3215,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -335,7 +333,7 @@
 			"file": "js/custom.js",
 			"settings":
 			{
-				"buffer_size": 1507,
+				"buffer_size": 1285,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -523,15 +521,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5909,
+						"buffer_size": 5724,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								990,
-								990
+								5573,
+								5406
 							]
 						],
 						"settings":
@@ -544,15 +542,15 @@
 								{
 									"1":
 									[
-										1005,
-										1006
+										5566,
+										5572
 									]
 								},
 								"icon":
 								{
 									"1":
 									[
-										"Packages/BracketHighlighter/icons/double_quote.png",
+										"Packages/BracketHighlighter/icons/tag.png",
 										"brackethighlighter.default"
 									]
 								},
@@ -560,8 +558,8 @@
 								{
 									"1":
 									[
-										944,
-										945
+										5407,
+										5413
 									]
 								},
 								"unmatched":
@@ -580,11 +578,6 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
@@ -600,6 +593,11 @@
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -631,7 +629,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2558.0,
+						"translation.y": 2697.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -640,7 +638,7 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -649,15 +647,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3167,
+						"buffer_size": 3215,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2595,
-								2595
+								1179,
+								1179
 							]
 						],
 						"settings":
@@ -669,8 +667,8 @@
 								{
 									"1":
 									[
-										2814,
-										2815
+										1180,
+										1181
 									]
 								},
 								"icon":
@@ -685,8 +683,8 @@
 								{
 									"1":
 									[
-										2253,
-										2254
+										980,
+										981
 									]
 								},
 								"unmatched":
@@ -700,88 +698,82 @@
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
 							],
 							"syntax": "Packages/CSS/CSS.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1985.0,
+						"translation.y": 918.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 2,
 					"file": "js/custom.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1507,
+						"buffer_size": 1285,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								904,
-								904
+								54,
+								54
 							]
 						],
 						"settings":
@@ -792,27 +784,12 @@
 							{
 								"close":
 								{
-									"1":
-									[
-										917,
-										918
-									]
 								},
 								"icon":
 								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/round_bracket.png",
-										"brackethighlighter.default"
-									]
 								},
 								"open":
 								{
-									"1":
-									[
-										901,
-										902
-									]
 								},
 								"unmatched":
 								{
@@ -830,11 +807,6 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
@@ -850,6 +822,11 @@
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -913,19 +890,12 @@
 				0,
 				2,
 				1
-			],
-			[
-				2,
-				0,
-				3,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.387953144266,
-			0.728228524455,
+			0.5,
 			1.0
 		],
 		"rows":
