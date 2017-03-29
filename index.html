@@ -19,7 +19,6 @@
   <link href="css/bootstrap-social.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato%7CShare+Tech+Mono" rel="stylesheet">
 
-
 	<link href="css/style.css" rel="stylesheet">
 
 </head>
@@ -30,15 +29,16 @@
 
 <!-- NAVIGATION BAR -->
 
-<nav class="navbar navbar-full offset-sm-1 pull-xs-right">
+<nav class="navbar navbar-full pull-xs-right">
   <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#CollapseNavBar" aria-controls="CollapseNavBar" aria-expanded="false" aria-label="Toggle navigation">
         &#9776;
   </button>
-  <div class="collapse navbar-toggleable-xs pull-xs-right" id="CollapseNavBar">
+  <div class=" offset-sm-1 collapse navbar-toggleable-xs pull-xs-right" id="CollapseNavBar">
     <ul class="nav navbar-nav">
       <li class="nav-item"><a class="nav-link" href="#about" title="">About</a></li>
       <li class="nav-item"><a class="nav-link" href="#work" title="">Work</a></li>
-      <!-- <li class="nav-item"><a class="nav-link" href="#" title="">Blog</a></li> -->
+      <!-- <li class="nav-item"><a class="nav-link disabled" href="#projects" title="">Projects</a></li>
+      <li class="nav-item"><a class="nav-link disabled" href="#" title="">Blog</a></li> -->
     </ul>
   </div>
 </nav>
@@ -47,19 +47,23 @@
 <!-- LANDING -->
 
 <header id="home" class="container-fluid">
+  
   <div class="row">
-    <div id="jumbotron" class="text-sm-center">
-      <h1 class="">Jose Diaz</h1>
-      <h2>Front-End Developer</h1>
-      
+    <div id="jumbotron" class="text-xs-center">
+      <h1>Jose Diaz</h1>
+      <h3>Web Developer</h1>
     </div>
   </div>
 </header>
 
+<div class="arrowToTop">
+  <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i>
+</div>
+  
 
 <!-- ABOUT -->
 
-<section id="about" class="container-fluid">
+<section id="about" class="about container-fluid">
   <div class="offset-sm-1">
     <h2 id="about-anchor">- ABOUT -</h2>
     <div class="row">
@@ -86,7 +90,7 @@
 
 <!-- WORK -->
 
-<section id="work" class="container-fluid">
+<section id="work" class="projects container-fluid">
   <div class="offset-sm-1">
     <h2>- WORK -</h2>
     <p>These are the things I've done</p>

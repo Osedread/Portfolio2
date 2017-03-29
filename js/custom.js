@@ -1,20 +1,24 @@
 var $jumbo = $("#jumbotron");
-var $nav = $("nav li");
+var $nav = $("nav");
+var $toTop = $(".arrowToTop");
 
 $jumbo.hide();
 $nav.hide();
+$toTop.hide();
 
 //JQuery DOM Ready Function
 $(document).ready(function() {
 
   ///// Fade In of the jumbotron at the beginning
+  
   $jumbo.delay(1000).fadeIn("slow", function() {
       $(this).addClass("fading");
-      $nav.delay(1000).fadeIn("slow");
+      $nav.delay(1000).slideDown("slow");
   });
 
 
 	///// Smooth Scroll
+  
     var scrollToAnchor = function(id) {
     // grab the element to scroll to based on the name
     var elem = $("a[name='"+ id +"']");
@@ -30,6 +34,7 @@ $(document).ready(function() {
       }, 1000 );
     }
     };
+
     // bind to click event
     $("a").click(function( event ) {
       // only do this if it's an anchor link
@@ -42,6 +47,19 @@ $(document).ready(function() {
       }
     });
 
+//// Arrow To Top
+  // Make the arrow dissapear or appear depending on window position
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $toTop.fadeIn();
+      } else {
+        $toTop.fadeOut();
+      }
+    });
+  $toTop.on('click', function() {
+    $('html, body').animate({scrollTop : 0}, 800);
+    return false;
+  });
 
 });
 

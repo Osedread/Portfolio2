@@ -13,6 +13,7 @@
 body {
 	font-family: "Lato", sans-serif;
 	color: black;
+	overflow-x: hidden; 
 }
 
 h1, h2, h3, h4, nav ul a {
@@ -30,8 +31,8 @@ p {
 
 a, button {
 	color: white;
-	text-decoration: none 
-;}
+	text-decoration: none;
+}
 
 a:hover {
 	text-decoration: none;
@@ -47,50 +48,33 @@ section {
 
 .navbar {
 	background-color: rgb(9, 9, 9);
-	background-color: rgba(9, 9, 9, 0);
-	font-size: 1.5em;
+	background: linear-gradient(
+		to bottom,
+		rgb(9,9,9) 85%,
+		rgba(40,40,40,.7));
+	width: 100%;
+	font-size: 1.2em;
 	position: absolute;
 	text-decoration: none;
-	text-shadow: 1px 1px rgb(220, 220, 220);
+	/*text-shadow: 1px 1px rgb(220, 220, 220);*/
 }
 
 nav a {
-	border-bottom: 2px solid rgb(250, 250, 250);
-	border-bottom: 2px solid rgba(250, 250, 250, 0);
-	color: black;
-	margin-right: 20px;
+	margin: 0 1em;
+	padding: 0.3em 0.8em;
 	text-decoration: none;
 	transition-duration: .7s;
+	color: rgb(220, 220, 220);
 }
 
-nav a:hover {
-	border-bottom: 2px solid rgb(220, 220, 220);
-	border-bottom: 2px solid rgba(220, 220, 220, 0.5);
-	color: rgb(220, 220, 220);
-	color: rgba(220, 220, 220, 0.5);
+nav a:hover, nav a:focus {
+	color: rgb(9,9,9);
 	text-shadow: 1px 1px rgb(9, 9, 9);
-	
+	box-shadow: inset 0 0 0 25px rgb(252, 38, 47);
 }
 
-nav a:focus {
-	color: rgb(220, 220, 220);
-	color: rgba(220, 220, 220, 0.5);
-	text-decoration: none;
-}
 
 /****** LANDING WEBSITE ******/
-
-@keyframes FadeInOut {
-	0% {
-		opacity: 1;
-	}
-	70% {
-		opacity: 0.3;
-	}
-	100% {
-		opacity: 1;
-	}
-}
 
 header {
 	background:
@@ -112,31 +96,48 @@ header div div {
 	text-shadow: 1px 1px black;
 }
 
-.fading {
-	animation: FadeInOut 8s ease-in-out 0s infinite;
+/****** BUTTON TO TOP ******/
+
+.arrowToTop {
+	position: fixed;
+	bottom: 1.4em;
+	right: 1.4em;
+	z-index: 1;
+	font-size: 1.3em;
+	font-weight: 800;
+	border-radius: 8px;
+	cursor: pointer;
+	outline: none;
+	color: rgba(252, 38, 47, .7);
 }
 
+.arrowToTop:hover {
+	color: rgba(252, 38, 47, 1);
+	-webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
 
 /****** ABOUT ********/
 
-section:nth-child(3) {
+.about {
 	background: rgb(9, 9, 9);
 	color: rgb(220, 220, 220);
 }
 
-section:nth-child(3) img {
+.about img {
 	border: 1px solid rgb(220, 220, 220);
 	border-radius: 6px;
 	margin-bottom: 1em;
 }
 
+
 /****** PROJECTS ******/
 
-section:nth-child(4) {
+.projects {
 	background-color: rgb(40, 40, 40);
 	color: rgb(220, 220, 220);
 }
-
 
 figure {
 	width: 100%;
@@ -184,7 +185,6 @@ figure:hover figcaption { opacity: 1; }
 	background-size: cover;
 }
 
- 
 
 /****** FOOTER ******/
 
