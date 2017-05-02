@@ -1,25 +1,29 @@
 var $jumbo = $("#jumbotron");
 var $nav = $("nav");
 var $toTop = $(".arrowToTop");
+var $skillsBars = $(".about li");
 
 $jumbo.hide();
 $nav.hide();
 $toTop.hide();
 
-//JQuery DOM Ready Function
-$(document).ready(function() {
+// Preloader script
+  // Wait for window load
+  $(window).on("load", function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");
+  });
 
-  ///// Fade In of the jumbotron at the beginning
+// jQuery DOM Ready Function
+$(document).ready(function() {
   
+  // Fade In of the jumbotron at the beginning
   $jumbo.delay(1000).fadeIn("slow", function() {
       $(this).addClass("fading");
       $nav.delay(1000).slideDown("slow");
   });
-
-
-	///// Smooth Scroll
-  
-    var scrollToAnchor = function(id) {
+	// Smooth Scroll
+  var scrollToAnchor = function(id) {
     // grab the element to scroll to based on the name
     var elem = $("a[name='"+ id +"']");
     // if that didn't work, look for an element with our ID
@@ -29,25 +33,25 @@ $(document).ready(function() {
     // if the destination element exists
     if ( typeof( elem.offset() ) !== "undefined" ) {
       // do the scroll
-      $('html, body').animate({
+      $("html, body").animate({
               scrollTop: elem.offset().top
       }, 1000 );
     }
-    };
+  };
 
-    // bind to click event
-    $("a").click(function( event ) {
-      // only do this if it's an anchor link
-      if ( $(this).attr("href").match("#") ) {
-        // cancel default event propagation
-        event.preventDefault();
-        // scroll to the location
-        var href = $(this).attr('href').replace('#', '');
-        scrollToAnchor( href );
-      }
-    });
+  // bind to click event
+  $("a").click(function( event ) {
+    // only do this if it's an anchor link
+    if ( $(this).attr("href").match("#") ) {
+      // cancel default event propagation
+      event.preventDefault();
+      // scroll to the location
+      var href = $(this).attr("href").replace("#", "");
+      scrollToAnchor( href );
+    }
+  });
 
-//// Arrow To Top
+  // Arrow To Top
   // Make the arrow dissapear or appear depending on window position
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
@@ -56,11 +60,30 @@ $(document).ready(function() {
         $toTop.fadeOut();
       }
     });
-  $toTop.on('click', function() {
-    $('html, body').animate({scrollTop : 0}, 800);
+  $toTop.on("click", function() {
+    $("html, body").animate({scrollTop : 0}, 800);
     return false;
   });
 
+  // Skills bar
+  $skillsBars.on("inview", function(event, isInView) {
+    if (isInView) {
+      $(".skills-html").animate({width: "95%"}, 1000);
+      $(".skills-css").animate({width: "90%"}, 1000);
+      $(".skills-js").animate({width: "50%"}, 1000);
+      $(".skills-bs").animate({width: "70%"}, 1000);
+      $(".skills-jq").animate({width: "60%"}, 1000);
+      $(".skills-git").animate({width: "25%"}, 1000);
+    } else {
+      $(".skills-html").animate({width: "0%"});
+      $(".skills-css").animate({width: "0%"});
+      $(".skills-js").animate({width: "0%"});
+      $(".skills-bs").animate({width: "0%"});
+      $(".skills-jq").animate({width: "0%"});
+      $(".skills-git").animate({width: "0%"});
+    }
+  });
+
+// Finish $(function)
 });
 
-//////////////// Finish $(function) ////////////////////////

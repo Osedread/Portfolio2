@@ -27,6 +27,10 @@
 
 <body>
 
+<!-- PRELOADER -->
+
+<div class="se-pre-con"></div>
+
 <!-- NAVIGATION BAR -->
 
 <nav class="navbar navbar-full pull-xs-right">
@@ -37,8 +41,8 @@
     <ul class="nav navbar-nav">
       <li class="nav-item"><a class="nav-link" href="#about" title="">About</a></li>
       <li class="nav-item"><a class="nav-link" href="#work" title="">Work</a></li>
-      <!-- <li class="nav-item"><a class="nav-link disabled" href="#projects" title="">Projects</a></li>
-      <li class="nav-item"><a class="nav-link disabled" href="#" title="">Blog</a></li> -->
+      <li class="nav-item"><a class="nav-link" href="#contact" title="">Contact</a></li>
+      <!-- <li class="nav-item"><a class="nav-link disabled" href="#" title="">Blog</a></li> -->
     </ul>
   </div>
 </nav>
@@ -71,16 +75,40 @@
         <img src="images/profile2.jpg" alt="profile" class="img-fluid rounded" />
       </div>
       <div class="col-xs-12 col-sm-5 text-xs-justify m-y-2">
-        <p class=""><strong>I am a Front-End Developer based in Bristol, UK.</strong></p>
-        <p>I specialise in crafting astonishing websites that please the eyes on any type of screen, smartphones included.</p>
+        <p class=""><strong>I am a Web Developer based in Bristol, UK.</strong></p>
+        <p>I specialise in crafting astonishing websites that gives business the online presence they need.</p>
         <p class="">My set of skills are the sum of the front-end technologies:</p>
           <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Javascript</li>
-            <li>Bootstrap</li>
-            <li>jQuery</li>
-            <li>Git</li>
+            <li>
+              <div class="skills-wrapper">
+                <div class="skills-bar skills-html">HTML5</div>
+              </div>
+            </li>
+            <li>
+              <div class="skills-wrapper">
+                <div class="skills-bar skills-css">CSS3</div>
+              </div>
+            </li>
+            <li>
+              <div class="skills-wrapper">
+                <div class="skills-bar skills-js">Javascript</div>
+              </div>
+            </li>
+            <li>
+              <div class="skills-wrapper">
+                <div class="skills-bar skills-bs">Bootstrap</div>
+              </div>
+            </li>
+            <li>
+              <div class="skills-wrapper">
+                <div class="skills-bar skills-jq">jQuery</div>
+              </div>
+            </li>
+            <li>
+              <div class="skills-wrapper">
+                <div class="skills-bar skills-git">Git</div>
+              </div>
+            </li>
           </ul>
       </div>
     </div>
@@ -140,7 +168,7 @@
 
 <!-- Footer -->
 
-<footer id="footer" class="container-fluid text-xs-center">
+<footer id="contact" class="container-fluid text-xs-center">
   <div class="row">
     <div class="col-xs-12">
       <br>
@@ -167,6 +195,7 @@
     </div>
   </div>
   <br>
+  <br>
 </footer>
 
 
@@ -178,8 +207,9 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/custom.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
 
-  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+ <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 </body>
 </html>
