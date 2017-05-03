@@ -36,6 +36,13 @@ body {
 	text-shadow: 2px 2px 3px rgb(40, 40, 40);
 }
 
+.heading2 {
+	background-color: rgba(40, 40, 40, 0.4);
+	display: inline-block;
+	padding: 0.3em;
+	border-radius: 3px;
+}
+
 p {
 	margin-bottom: 1em;
 }
@@ -173,6 +180,7 @@ header div div {
 }
 
 figure {
+	border: 2px solid rgb(40, 40, 40);
 	box-shadow: 10px 10px 6px 2px rgb(9, 9, 9);
 	display: inline-block;
 	height: 100%;

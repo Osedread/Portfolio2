@@ -1,5 +1,6 @@
 var $jumbo = $("#jumbotron");
 var $nav = $("nav");
+var $navLink = $("nav a");
 var $toTop = $(".arrowToTop");
 var $skillsBars = $(".about li");
 
@@ -12,16 +13,16 @@ $toTop.hide();
   $(window).on("load", function() {
     // Animate loader off screen
     $(".se-pre-con").fadeOut("slow");
+    // Fade In of the jumbotron at the beginning
+    $jumbo.delay(1000).fadeIn("slow", function() {
+      $(this).addClass("fading");
+      $nav.delay(1000).slideDown("slow");
+    });
   });
 
 // jQuery DOM Ready Function
 $(document).ready(function() {
   
-  // Fade In of the jumbotron at the beginning
-  $jumbo.delay(1000).fadeIn("slow", function() {
-      $(this).addClass("fading");
-      $nav.delay(1000).slideDown("slow");
-  });
 	// Smooth Scroll
   var scrollToAnchor = function(id) {
     // grab the element to scroll to based on the name
@@ -38,18 +39,17 @@ $(document).ready(function() {
       }, 1000 );
     }
   };
-
-  // bind to click event
-  $("a").click(function( event ) {
-    // only do this if it's an anchor link
-    if ( $(this).attr("href").match("#") ) {
-      // cancel default event propagation
-      event.preventDefault();
-      // scroll to the location
-      var href = $(this).attr("href").replace("#", "");
-      scrollToAnchor( href );
-    }
-  });
+    // bind to click event
+    $("a").on("click", function( event ) {
+      // only do this if it's an anchor link
+      if ( $(this).attr("href").match("#") ) {
+        // cancel default event propagation
+        event.preventDefault();
+        // scroll to the location
+        var href = $(this).attr("href").replace("#", "");
+        scrollToAnchor( href );
+      }
+    });
 
   // Arrow To Top
   // Make the arrow dissapear or appear depending on window position
