@@ -56,10 +56,11 @@ $(document).ready(function() {
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $toTop.fadeIn();
-      } else {
-        $toTop.fadeOut();
-      }
-    });
+    } else {
+      $toTop.fadeOut();
+    }
+  });
+  
   $toTop.on("click", function() {
     $("html, body").animate({scrollTop : 0}, 800);
     return false;

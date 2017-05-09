@@ -115,7 +115,7 @@ header div div {
 	border-radius: 8px;
 	bottom: 1.4em;
 	color: rgb(252, 38, 47);
-	color: rgba(252, 38, 47, .7);
+	color: rgba(252, 38, 47, .9);
 	cursor: pointer;
 	font-size: 1.3em;
 	font-weight: 800;
@@ -231,6 +231,10 @@ figure:hover figcaption { opacity: 1; }
 
 footer {
 	background-color: rgb(40, 40, 40);
+}
+
+footer a {
+	margin-bottom: 0.5em;
 }
 
 .btn-cp {
