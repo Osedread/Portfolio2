@@ -1,0 +1,28 @@
+/****** NAVIGATION ******/
+
+.navbar {
+	background-color: $color_gray;
+	background: linear-gradient(
+		to bottom,
+		$color_gray 90%,
+		$color_dirty_white_60);
+	box-shadow: 0 2px 5px $color_gray;
+	font-size: 1.2em;
+	position: absolute;
+	text-decoration: none;
+	width: 100%;
+}
+
+nav a {
+	color: $color_dirty_white;
+	margin: 0 0.2em;
+	padding: 0.3em 0.8em;
+	text-decoration: none;
+	transition-duration: .7s;
+}
+
+nav a:hover, nav a:focus {
+	box-shadow: inset 0 0 0 5px $color_torch_red;
+	color: $color_torch_red;
+	text-shadow: 1px 1px $color_gray;
+}
