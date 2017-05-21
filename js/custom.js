@@ -1,12 +1,23 @@
+// Cache the elements before load
 var $jumbo = $("#jumbotron");
 var $nav = $("nav");
-var $navLink = $("nav a");
+var $about = $("#about");
+var $work = $("#work");
+var $footer = $("#footer");
+
+// Other variables
 var $toTop = $(".arrowToTop");
 var $skillsBars = $(".about li");
 
+
+
 $jumbo.hide();
 $nav.hide();
+$about.hide();
+$work.hide();
+$footer.hide();
 $toTop.hide();
+
 
 // Preloader script
   // Wait for window load
@@ -17,6 +28,9 @@ $toTop.hide();
     $jumbo.delay(1000).fadeIn("slow", function() {
       $(this).addClass("fading");
       $nav.delay(1000).slideDown("slow");
+      $about.show();
+      $work.show();
+      $footer.show();
     });
   });
 
@@ -55,7 +69,7 @@ $(document).ready(function() {
   // Make the arrow dissapear or appear depending on window position
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
-      $toTop.fadeIn();
+      $toTop.fadeIn().animate({fontSize: "1.6em"}).animate({fontSize:"1.3em"});
     } else {
       $toTop.fadeOut();
     }
@@ -71,10 +85,12 @@ $(document).ready(function() {
     if (isInView) {
       $(".skills-html").animate({width: "95%"}, 1000);
       $(".skills-css").animate({width: "90%"}, 1000);
-      $(".skills-js").animate({width: "50%"}, 1000);
+      $(".skills-sass").animate({width: "40%"}, 1000);
+      $(".skills-js").animate({width: "65%"}, 1000);
       $(".skills-bs").animate({width: "70%"}, 1000);
-      $(".skills-jq").animate({width: "60%"}, 1000);
-      $(".skills-git").animate({width: "25%"}, 1000);
+      $(".skills-jq").animate({width: "70%"}, 1000);
+      $(".skills-grunt").animate({width: "30%"}, 1000);
+      $(".skills-git").animate({width: "45%"}, 1000);
     } else {
       $(".skills-html").animate({width: "0%"});
       $(".skills-css").animate({width: "0%"});
