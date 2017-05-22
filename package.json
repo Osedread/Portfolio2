@@ -4,10 +4,9 @@
   "author": "Jose Diaz",
   "devDependencies": {
     "grunt": "*",
-    "grunt-contrib-compass": "*",
-    "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-jshint": "*",
-    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-sass": "*",
     "grunt-contrib-watch": "*"
   }
 }

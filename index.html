@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-  <title>J. Diaz | Web Developer</title>
+  <title>J. Diaz | Front-End Web Developer</title>
 <!-- META TAGS -->
   <meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,9 +30,9 @@
   </button>
   <div class=" offset-sm-1 collapse navbar-toggleable-xs pull-xs-right" id="CollapseNavBar">
     <ul class="nav navbar-nav">
-      <li class="nav-item"><a class="nav-link" href="#about" title="">About</a></li>
-      <li class="nav-item"><a class="nav-link" href="#work" title="">Work</a></li>
-      <li class="nav-item"><a class="nav-link" href="#contact" title="">Contact</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about" title="" data-toggle="collapse" data-target="#CollapseNavBar">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#work" title="" data-toggle="collapse" data-target="#CollapseNavBar">Work</a></li>
+      <li class="nav-item"><a class="nav-link" href="#footer" title="" data-toggle="collapse" data-target="#CollapseNavBar">Contact</a></li>
       <!-- <li class="nav-item"><a class="nav-link disabled" href="#" title="">Blog</a></li> -->
     </ul>
   </div>
@@ -43,7 +43,7 @@
   <div class="row">
     <div id="jumbotron" class="text-xs-center">
       <h1>Jose Diaz</h1>
-      <h3>Web Developer</h3>
+      <h3> < Front-End Web Developer > </h3>
     </div>
   </div>
 </header>
@@ -59,16 +59,16 @@
     <h2 class="heading">- ABOUT -</h2>
     <p class="heading heading2">Who am I?</p>
     <div class="row">
-      <div class="col-xs-8 col-sm-3 offset-sm-1">
-        <div class="col-sm-8 offset-sm-2">
+      <div class="col-xs-10 col-sm-5">
+        <div class="col-xs-6 col-sm-6">
           <img src="images/profile2.jpg" alt="profile" class="img-fluid rounded" />
         </div>
-        <div class="col-sm-12">
+        <div class="col-xs-12">
           <p class=""><strong>I am a Web Developer based in Bristol, UK.</strong></p>
           <p>I specialise in crafting astonishing websites that gives business the online presence they need.</p>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-5 offset-sm-1 text-xs-justify m-y-2">
+      <div class="col-xs-10 col-sm-6 text-xs-justify m-y-2">
         <p class="">My set of skills are the sum of the front-end technologies:</p>
           <ul>
             <li>
@@ -208,10 +208,8 @@
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="js/custom.js"></script>
+  <script src="built.min.js"></script>
   <script src="js/jquery.inview.min.js"></script>
-
-<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
 
 </body>
 </html>

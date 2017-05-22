@@ -3,7 +3,23 @@ module.exports = function(grunt){
 
 	// Project configuration. 
 	grunt.initConfig({
+		
 		pkg: grunt.file.readJSON('package.json'),
+		
+		concat: {
+		    dist: {
+		      src: 'js/custom.js',
+		      dest: 'built.js',
+		    }
+		},
+
+		uglify: {
+			dist: {
+				src: 'built.js',
+				dest: 'built.min.js'
+			}
+		},
+
 		sass: {
 			dist: {
 				options: {
@@ -14,19 +30,27 @@ module.exports = function(grunt){
 				}
 			}
 		},
-		concat: {
-		    dist: {
-		      src: ['src/intro.js', 'src/project.js', 'src/outro.js'],
-		      dest: 'dist/built.js',
-		    }
-		  },
+
+		watch: {
+			css: {
+            	files: ['**/*.scss'],
+            	tasks: ['sass'],
+            	options: {
+                spawn: false,
+                livereload: true,
+            	}
+        	}
+		}
 });
 
 
 
 	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 
-	grunt.registerTask('default', ['sass']);
+	grunt.registerTask('default', ['concat', 'uglify', 'sass']);
+	grunt.registerTask('dev', ['watch']);
 
 };
