@@ -1,12 +1,12 @@
 /****** NAVIGATION ******/
 
 .navbar {
-	background-color: $color_gray;
+	background-color: $color_shark;
 	background: linear-gradient(
 		to bottom,
-		$color_gray 90%,
+		$color_shark 90%,
 		$color_dirty_white_60);
-	box-shadow: 0 2px 5px $color_gray;
+	box-shadow: 0 2px 5px $color_shark;
 	font-size: 1.2em;
 	position: absolute;
 	text-decoration: none;

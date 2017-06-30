@@ -1,26 +1,26 @@
 // Cache the elements before load
+var $about = $("#about");
+var $footer = $("#footer");
 var $jumbo = $("#jumbotron");
 var $nav = $("nav");
-var $about = $("#about");
-var $work = $("#work");
-var $footer = $("#footer");
 var $navBtn = $("nav button");
+var $title = $("#jumbotron h3");
+var $work = $("#work");
 
 // Other variables
 var $toTop = $(".arrowToTop");
 var $skillsBars = $(".about li");
 
 
-
+$about.hide();
+$footer.hide();
 $jumbo.hide();
 $nav.hide();
-$about.hide();
-$work.hide();
-$footer.hide();
 $toTop.hide();
+$work.hide();
 
 
-// Preloader script
+// Preloader script and animations on load
   // Wait for window load
   $(window).on("load", function() {
     // Animate loader off screen
@@ -33,7 +33,9 @@ $toTop.hide();
       $work.show();
       $footer.show();
     });
-  });
+    // Change color title
+    $title.delay(2000).css("color", "");
+    });
 
 // jQuery DOM Ready Function
 $(document).ready(function() {
@@ -94,6 +96,8 @@ $(document).ready(function() {
       $(".skills-git").animate({width: "45%"}, 1000);
     }
   });
+
+  
 
 // Finish $(function)
 });
