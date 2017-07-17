@@ -24,18 +24,16 @@ $work.hide();
   // Wait for window load
   $(window).on("load", function() {
     // Animate loader off screen
-    $(".se-pre-con").fadeOut("slow");
+    $(".loader-container").fadeOut("slow");
     // Fade In of the jumbotron at the beginning
     $jumbo.delay(1000).fadeIn("slow", function() {
-      $(this).addClass("fading");
-      $nav.delay(1000).slideDown("slow");
-      $about.show();
-      $work.show();
-      $footer.show();
+      $nav.delay(1000).slideDown("slow", function() {
+        $about.delay(4000).show();
+        $work.show();
+        $footer.show();
+      });
     });
-    // Change color title
-    $title.delay(2000).css("color", "");
-    });
+  });
 
 // jQuery DOM Ready Function
 $(document).ready(function() {
