@@ -2,9 +2,8 @@
 var $about = $("#about");
 var $footer = $("#footer");
 var $jumbo = $("#jumbotron");
-var $nav = $("nav");
-var $navBtn = $("nav button");
-var $title = $("#jumbotron h3");
+var $nav = $(".navbar");
+var $navA = $(".navbar a");
 var $work = $("#work");
 
 // Other variables
@@ -24,18 +23,16 @@ $work.hide();
   // Wait for window load
   $(window).on("load", function() {
     // Animate loader off screen
-    $(".se-pre-con").fadeOut("slow");
+    $(".loader-container").fadeOut("slow");
     // Fade In of the jumbotron at the beginning
     $jumbo.delay(1000).fadeIn("slow", function() {
-      $(this).addClass("fading");
-      $nav.delay(1000).slideDown("slow");
-      $about.show();
-      $work.show();
-      $footer.show();
+      $nav.delay(1000).slideDown("slow", function() {
+        $about.delay(4000).show();
+        $work.show();
+        $footer.show();
+      });
     });
-    // Change color title
-    $title.delay(2000).css("color", "");
-    });
+  });
 
 // jQuery DOM Ready Function
 $(document).ready(function() {
@@ -70,18 +67,19 @@ $(document).ready(function() {
 
   // Arrow To Top
   // Make the arrow dissapear or appear depending on window position
-  $(window).scroll(function() {
+  $(window).on("scroll", function() {
     if ($(this).scrollTop() > 100) {
       $toTop.fadeIn();
     } else {
       $toTop.fadeOut();
     }
   });
-  
+
   $toTop.on("click", function() {
     $("html, body").animate({scrollTop : 0}, 800);
     return false;
   });
+
 
   // Skills bar
   $skillsBars.on("inview", function(event, isInView) {

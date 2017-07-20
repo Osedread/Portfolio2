@@ -2,9 +2,8 @@
 var $about = $("#about");
 var $footer = $("#footer");
 var $jumbo = $("#jumbotron");
-var $nav = $("nav");
-var $navBtn = $("nav button");
-var $title = $("#jumbotron h3");
+var $nav = $(".navbar");
+var $navA = $(".navbar a");
 var $work = $("#work");
 
 // Other variables
@@ -68,18 +67,19 @@ $(document).ready(function() {
 
   // Arrow To Top
   // Make the arrow dissapear or appear depending on window position
-  $(window).scroll(function() {
+  $(window).on("scroll", function() {
     if ($(this).scrollTop() > 100) {
       $toTop.fadeIn();
     } else {
       $toTop.fadeOut();
     }
   });
-  
+
   $toTop.on("click", function() {
     $("html, body").animate({scrollTop : 0}, 800);
     return false;
   });
+
 
   // Skills bar
   $skillsBars.on("inview", function(event, isInView) {
