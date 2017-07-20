@@ -25,9 +25,9 @@ $work.hide();
     // Animate loader off screen
     $(".loader-container").fadeOut("slow");
     // Fade In of the jumbotron at the beginning
-    $jumbo.delay(1000).fadeIn("slow", function() {
-      $nav.delay(1000).slideDown("slow", function() {
-        $about.delay(4000).show();
+    $jumbo.delay(400).fadeIn("slow", function() {
+      $nav.delay(400).slideDown("slow", function() {
+        $about.delay(1000).show();
         $work.show();
         $footer.show();
       });
