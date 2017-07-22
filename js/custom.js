@@ -23,14 +23,16 @@ $work.hide();
   // Wait for window load
   $(window).on("load", function() {
     // Animate loader off screen
-    $(".loader-container").fadeOut("slow");
-    // Fade In of the jumbotron at the beginning
-    $jumbo.delay(400).fadeIn("slow", function() {
-      $nav.delay(400).slideDown("slow", function() {
-        $about.delay(1000).show();
-        $work.show();
-        $footer.show();
+    $(".loader-container").fadeOut("slow", function() {
+      // Fade In of the jumbotron at the beginning
+      $jumbo.delay(400).fadeIn("slow", function() {
+        $nav.delay(400).slideDown("slow", function() {
+          $about.delay(400).show();
+          $work.show();
+          $footer.show();
+        });
       });
+
     });
   });
 
