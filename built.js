@@ -23,18 +23,17 @@ $work.hide();
   // Wait for window load
   $(window).on("load", function() {
     // Animate loader off screen
-    $(".loader-container").fadeOut("slow");
-    // Fade In of the jumbotron at the beginning
-    $jumbo.delay(800).fadeIn("slow", function() {
-      $nav.delay(400).slideDown("slow", function() {
-        $about.delay(4000).show();
-        $work.show();
-        $footer.show();
-      });
+    $(".loader-container").fadeOut("slow", function() {
+      // Fade In of the jumbotron at the beginning
+      $jumbo.delay(400).fadeIn("slow");
+      $nav.delay(400).slideDown("slow");
+      $about.delay(400).show();
+      $work.show();
+      $footer.show();
     });
   });
 
-// jQuery DOM Ready Function
+  // jQuery DOM Ready Function
 $(document).ready(function() {
   
 	// Smooth Scroll
@@ -54,7 +53,7 @@ $(document).ready(function() {
     }
   };
     // bind to click event
-    $("a").on("click", function( event ) {
+    $navA.on("click", function( event ) {
       // only do this if it's an anchor link
       if ( $(this).attr("href").match("#") ) {
         // cancel default event propagation
