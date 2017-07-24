@@ -5,6 +5,8 @@ var $jumbo = $("#jumbotron");
 var $nav = $(".navbar");
 var $navA = $(".navbar a");
 var $work = $("#work");
+//
+var w = window.innerWidth;
 
 // Other variables
 var $toTop = $(".arrowToTop");
@@ -19,6 +21,22 @@ $toTop.hide();
 $work.hide();
 
 
+
+  // console.log(w);
+  // console.log(navLinks);
+  // if (w <= 576) {
+  //   // For future references, doing a for loop is way faster than the forEach.
+  //   for (var i = 0; i < navLinks.length; i++) {
+  //     var el = navLinks[i];
+  //     el.setAttribute("data-toggle", "collapse");
+  //   }
+  // } else {
+  //   for (var i = 0; i < navLinks.length; i++) {
+  //     var el = navLinks[i];
+  //     el.removeAttribute();
+  // }
+
+
 // Preloader script and animations on load
   // Wait for window load
   $(window).on("load", function() {
@@ -26,16 +44,24 @@ $work.hide();
     $(".loader-container").fadeOut("slow", function() {
       // Fade In of the jumbotron at the beginning
       $jumbo.delay(400).fadeIn("slow");
-      $nav.delay(400).slideDown("slow");
-      $about.delay(400).show();
-      $work.show();
-      $footer.show();
+      $nav.delay(400).slideDown("slow", function(){
+        $about.delay(200).show();
+        $work.show();
+        $footer.show();
+      });
     });
   });
 
   // jQuery DOM Ready Function
 $(document).ready(function() {
   
+  // // Implement navbar-collapse on mobile and leaving it as it is on desktop and tablets
+  if (w <= 576) {
+    $navA.on("click", function(){
+      $(".navbar-toggler").click();
+    });
+  }
+
 	// Smooth Scroll
   var scrollToAnchor = function(id) {
     // grab the element to scroll to based on the name
